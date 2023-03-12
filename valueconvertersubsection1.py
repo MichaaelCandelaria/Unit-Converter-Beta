@@ -1,11 +1,11 @@
 # Welcome message
 print("Welcome to Michael's number converter!")
-print(' 1. Imperial only \n 2. Metric only \n 3. Imperial to metric \n 4. Metric to Imperial')
+print(' 1. Imperial only \n 2. Metric only')
 unit_system = int(input('First, please select what conversion type you wish to use here:'))
 # Imperial only
 if unit_system == 1:
     print('  1. Length \n  2. Mass')
-    unit_type = int(input('Enter unit type here: '))
+    unit_type = int(input('Enter the IMPERIAL unit type here: '))
 # Imperial Length
     if unit_type == 1:
         print('Below is a list of IMPERIAL LENGTH conversions')
@@ -90,7 +90,7 @@ if unit_system == 1:
 # Metric only
 elif unit_system == 2:
     print('  1. Length \n  2. Mass')
-    unit_type = int(input('Enter METRIC unit type here: '))
+    unit_type = int(input('Enter the METRIC unit type here: '))
     # Metric Length
     if unit_type == 1:
         print('Below is a list of METRIC LENGTH conversions')
@@ -98,43 +98,43 @@ elif unit_system == 2:
         print('     4. Kilometers to Centimeters \n     5. Kilometers to Meters \n     6. Kilometers to Millimeters')
         print('     7. Meters to Centimeters \n     8. Meters to Kilometers \n     9. Meters to Millimeters')
         conversion = int(input('Please enter the METRIC LENGTH you wish to convert: '))
-        # Centimeters to Kilometers
+   # Centimeters to Kilometers
         if conversion == 1:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) / int(100000), 'Kilometers')
-        # Centimeter to Meter
+   # Centimeter to Meter
         elif conversion == 2:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) / int(100), 'Meters')
-        # Centimeters to Millimeters
+   # Centimeters to Millimeters
         elif conversion == 3:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(X) * int(10), 'Millimeters')
-        # Kilometers to Centimeters
+   # Kilometers to Centimeters
         elif conversion == 4:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) * int(100000), 'Centimeters')
-        # Kilometers to Meters
+   # Kilometers to Meters
         elif conversion == 5:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) * int(1000), 'Meters')
-        # Kilometers to Millimeters
+   # Kilometers to Millimeters
         elif conversion == 6:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) * int(1000000), 'Millimeters')
-        # Meters to Centimeters
+   # Meters to Centimeters
         elif conversion == 7:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) * int(100), 'Centimeters')
-        # Meters to Kilometers
+   # Meters to Kilometers
         elif conversion == 8:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) / int(1000), 'Kilometers')
-        # Meters to Millimeters
+   # Meters to Millimeters
         elif conversion == 9:
             x = float(input('Please enter the value you wish to convert: '))
             print(float(x) * int(1000), 'Millimeters')
-    # Metric Length
+   # Metric Mass
     elif unit_type == 2:
         print('Below is a list of METRIC MASS conversions')
-        print('     1. ')
+        print('     1. grams to kilograms 2. grams to tonnes 3. killograms to grams 4. kilograms to tonnes 5. tonnes to grams 6. tonnes to kilograms')
