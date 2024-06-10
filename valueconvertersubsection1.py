@@ -1,7 +1,3 @@
-import metric
-
-
-
 # Welcome message
 while True:
 
